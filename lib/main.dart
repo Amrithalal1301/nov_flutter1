@@ -2,6 +2,9 @@ import 'dart:async';
 
 
 import 'package:flutter/material.dart';
+import 'package:nov_flutter1/card.dart';
+import 'package:nov_flutter1/gridview.dart';
+import 'package:nov_flutter1/list_viw%20_with%20cuatom.dart';
 import 'package:nov_flutter1/login_withvalidation.dart';
 import 'package:nov_flutter1/profile.dart';
 import 'package:nov_flutter1/welcome.dart';
@@ -22,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(const Duration(seconds: 5), () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context)=>Profile()));
+          context, MaterialPageRoute(builder: (context)=>Cards()));
   });
   }
   @override
